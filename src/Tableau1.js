@@ -23,6 +23,7 @@ class Tableau1 extends Phaser.Scene {
         this.raquette.setDisplaySize(200, 20);
         this.raquette.body.setAllowGravity(false);
         this.raquette.setImmovable(true);
+        this.raquette.setTintFill(0xFFFFFF);
 
 
         /** Création de balle **/
@@ -32,8 +33,8 @@ class Tableau1 extends Phaser.Scene {
         this.balle.body.setBounce(1.3, 1.3);
         this.balle.body.setMaxVelocityX(400, 400)
         this.balle.body.setMaxVelocityY(600, 600)
-
         this.balle.setVelocityY(-200);
+        this.balle.setTintFill(0xFFFFFF);
 
         /** Création de Mur **/
 
