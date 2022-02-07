@@ -136,7 +136,7 @@ class Tableau1 extends Phaser.Scene {
         this.balle.setVelocityY(-200);
         this.balle.setVelocityX(0);
         this.raquette.setX(this.largeur / 2);
-        
+
 
         me.Joueur.vie = 3;
         me.Joueur.score = 0;
