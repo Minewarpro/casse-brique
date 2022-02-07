@@ -77,10 +77,10 @@ class Tableau1 extends Phaser.Scene {
         this.obstacles = [];
 
         for (let m = 0; m < 5; m++) {
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 9; i++) {
 
                 rect = this.physics.add.sprite(
-                    i * 61 + 120,
+                    i * 61 + 150,
                     m * 31 + 200,
                     'carre'
                 )
@@ -92,13 +92,13 @@ class Tableau1 extends Phaser.Scene {
 
                 this.physics.add.collider(this.balle, rect, function () {
                     me.rebond(me.obstacles[i]);
-                    me.disparait(me.obstacles[i + m * 10]);
+                    me.disparait(me.obstacles[i + m * 9]);
                     me.Joueur.score++;
                 });
             }
         }
-        me.obstacles[34].setTintFill(0x51FF00);
-        me.obstacles[35].setTintFill(0xFF0000);
+        me.obstacles[30].setTintFill(0x51FF00);
+        me.obstacles[31].setTintFill(0xFF0000);
     }
 
 
